@@ -1,0 +1,16 @@
+//we will print the row in upper triangle 
+//row will print 0(as even) and 1(as odd);
+#include<stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    for(int row = 1 ; row <= n ; row++)
+    {
+        for(int col = 1 ; col <= row ; col++)
+        {
+            printf("%d ",row % 2); //this will print the row as 0(even) or 1(odd);
+        }
+        printf("\n");
+    }
+}
